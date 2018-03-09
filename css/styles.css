@@ -1,0 +1,253 @@
+@font-face {
+  font-family: 'Circe Extra Bold';
+  src: url(../fonts/Circe-ExtraBold.eot);
+  src: url(../fonts/Circe-ExtraBold.eot?#iefix) format('embedded-opentype'), url(../fonts/Circe-ExtraBold.woff) format('woff'), url(../fonts/Circe-ExtraBold.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circe Bold';
+  src: url(../fonts/Circe-Bold.eot);
+  src: url(../fonts/Circe-Bold.eot?#iefix) format('embedded-opentype'), url(../fonts/Circe-Bold.woff) format('woff'), url(../fonts/Circe-Bold.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circe';
+  src: url(../fonts/Circe-Regular.eot);
+  src: url(../fonts/Circe-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/Circe-Regular.woff) format('woff'), url(../fonts/Circe-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'Circe', sans-serif;
+  font-size: 14px;
+}
+.vertical-line {
+  position: relative;
+  margin-left: 7%;
+  margin-right: 7.23%;
+  padding-top: 7.8%;
+  border-right: 2px solid #e6e5e5;
+  border-left: 2px solid #e6e5e5;
+}
+.vertical-line .main-title {
+  position: relative;
+  z-index: 100;
+  font-size: 9.1em;
+  font-family: 'Circe Extra Bold';
+  line-height: 0.94em;
+  letter-spacing: 0.04em;
+  color: white;
+  text-shadow: 0 0 30px #f1f1f1, 0 0 80px #f7f7f7;
+  width: 45.625%;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.slider-slide {
+  background-color: white;
+  position: absolute;
+  z-index: 30;
+  width: 70.4%;
+  left: 23.5%;
+  box-sizing: border-box;
+  top: 32.13%;
+  padding: 2.9% 2.4% 3.4% 8.5%;
+  box-shadow: 0 0 80px #eaeaea;
+}
+.slider-slide .slider-slide-switch {
+  font-family: 'Cabin', sans-serif;
+  font-size: 9px;
+  letter-spacing: 1.35px;
+  text-transform: uppercase;
+  color: #C1C1C1;
+  display: block;
+  vertical-align: middle;
+  text-align: right;
+}
+.slider-slide .top {
+  padding-bottom: 19%;
+}
+.slider-slide .top::after {
+  content: url("../images/arrow-up.png");
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 16px;
+}
+.slider-slide img {
+  width: 57%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.slider-slide .slider-slide-title {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 3.6%;
+}
+.slider-slide .slider-slide-title h2 {
+  padding-top: 0.2em;
+  font-size: 2.5em;
+  font-family: 'Circe Extra Bold';
+  margin: 0 0 0.1em 0;
+  color: #282828;
+}
+.slider-slide .slider-slide-title h3 {
+  margin: 0;
+  color: #a6a6a6;
+  font-family: 'Circe';
+  font-weight: normal;
+}
+.slider-slide p {
+  width: 57%;
+  margin: 6.8% 0 5.4%;
+  font-family: 'Cabin';
+  letter-spacing: 0.03em;
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+.slider-slide .bottom::after {
+  content: url("../images/arrow-up.png");
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 16px;
+  transform: rotate(180deg);
+}
+.more-info {
+  background-color: #edecec;
+  padding-left: 7.2%;
+  padding-right: 7.23%;
+}
+.more-info div:first-child {
+  margin-top: 40%;
+  margin-bottom: 20%;
+  box-sizing: border-box;
+  width: 70.4%;
+  margin-left: 23.5%;
+  display: inline-block;
+  border: 2px solid #e6e5e5;
+  padding: 1.1% 4.6% 2.6%;
+  color: #232323;
+}
+.more-info p {
+  margin-bottom: 0.3em;
+  font-size: 1.2em;
+}
+.more-info h3 {
+  font-family: 'Circe Bold';
+  font-size: 3em;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+.more-info .more-info-button {
+  vertical-align: middle;
+  font-family: 'Circe Bold';
+  font-size: 0.7em;
+  display: inline-block;
+  background-color: white;
+  margin-left: 13%;
+  padding: 1.6% 3.6%;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  color: #202020;
+  background-image: url("../images/border-line.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 87% 10%;
+}
+.more-info .more-info-button:hover {
+  color: #FFD373;
+}
+.more-info .more-info-button:active {
+  color: black;
+}
+.more-info .more-info-button:disabled {
+  border: 0;
+  opacity: 0.9;
+}
+footer {
+  background-image: url("../images/background-footer.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15.7%;
+  padding-left: 7%;
+  padding-right: 7.23%;
+  border-bottom: 2px solid #e6e5e5;
+}
+footer .footer-main {
+  background-image: url("../images/wolf.png");
+  background-repeat: no-repeat;
+  background-size: 36%;
+  padding-top: 10%;
+  background-position: bottom center;
+}
+footer .footer-main h2 {
+  font-family: 'Circe Bold';
+  text-align: center;
+  font-size: 3.1em;
+  color: white;
+  line-height: 0.46em;
+}
+footer .footer-main :last-child {
+  margin-bottom: 0;
+}
+footer .footer-button {
+  font-weight: bold;
+  font-family: "Circe Bold";
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #FFD373;
+  padding: 1% 4.5%;
+  margin-top: 5.8%;
+  margin-bottom: 7.1%;
+  font-size: 1em;
+  color: #FFD373;
+}
+footer .footer-button:hover {
+  background-color: #ffd373;
+}
+footer .footer-contacts {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+footer .footer-contacts .footer-contacts-soclinks a {
+  padding: 0 5%;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+footer .footer-contacts .footer-contacts-soclinks .pinterest {
+  background-image: url("../images/pinterest.png");
+}
+footer .footer-contacts .footer-contacts-soclinks .pinterest :hover {
+  background-image: url("../images/hover-pinterest.png");
+}
+footer .footer-contacts .footer-contacts-soclinks .dribble {
+  background-image: url("../images/dribble.png");
+}
+footer .footer-contacts .footer-contacts-soclinks .instagram {
+  background-image: url("../images/insta.png");
+}
+footer .footer-contacts .footer-contacts-soclinks .behance {
+  background-image: url("../images/behance.png");
+}
+footer .footer-contacts .footer-contacts-soclinks .facebook {
+  background-image: url("../images/facebook.png");
+}
+footer .footer-contacts .footer-copyright {
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}

@@ -1,0 +1,280 @@
+@color-gold: #FFD373;
+@margin-left: 7%;
+@margin-right: 7.23%;
+@info-margin-left: 23.5%;
+@info-width: 70.4%;
+@border: 2px solid #e6e5e5;
+
+@font-face {
+  font-family: 'Circe Extra Bold';
+  src: url(../fonts/Circe-ExtraBold.eot);
+  src: url(../fonts/Circe-ExtraBold.eot?#iefix) format('embedded-opentype'),
+  url(../fonts/Circe-ExtraBold.woff) format('woff'),
+  url(../fonts/Circe-ExtraBold.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circe Bold';
+  src: url(../fonts/Circe-Bold.eot);
+  src: url(../fonts/Circe-Bold.eot?#iefix) format('embedded-opentype'),
+  url(../fonts/Circe-Bold.woff) format('woff'),
+  url(../fonts/Circe-Bold.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circe';
+  src: url(../fonts/Circe-Regular.eot);
+  src: url(../fonts/Circe-Regular.eot?#iefix) format('embedded-opentype'),
+  url(../fonts/Circe-Regular.woff) format('woff'),
+  url(../fonts/Circe-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'Circe', sans-serif;
+  font-size: 14px;
+}
+.vertical-line {
+  position: relative;
+  margin-left: @margin-left;
+  margin-right: @margin-right;
+  padding-top: 7.8%;
+  border-right: @border;
+  border-left: @border;
+  .main-title {
+    position: relative;
+    z-index: 100;
+    font-size: 9.1em;
+    font-family: 'Circe Extra Bold';
+    line-height: 0.94em;
+    letter-spacing: 0.04em;
+    color: white;
+    text-shadow: 0 0 30px #f1f1f1, 0 0 80px #f7f7f7;
+    width: 45.625%;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+
+}
+
+.slider-slide {
+  background-color: white;
+  position: absolute;
+  z-index: 30;
+  width: @info-width;
+  left: @info-margin-left;
+  box-sizing: border-box;
+  top: 32.13%;
+  padding: 2.9% 2.4% 3.4% 8.5%;
+  box-shadow: 0 0 80px #eaeaea;
+  .slider-slide-switch {
+    font-family: 'Cabin', sans-serif;
+    font-size: 9px;
+    letter-spacing: 1.35px;
+    text-transform: uppercase;
+    color: #C1C1C1;
+    display: block;
+    vertical-align: middle;
+    text-align: right;
+  }
+  .top {
+    padding-bottom: 19%;
+    &::after {
+      content: url("../images/arrow-up.png");
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 16px;
+    }
+  }
+  img {
+    width: 57%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .slider-slide-title {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 3.6%;
+    h2 {
+      padding-top: 0.2em;
+      font-size: 2.5em;
+      font-family: 'Circe Extra Bold';
+      margin: 0 0 0.1em 0;
+      color: #282828;
+    }
+    h3 {
+      margin: 0;
+      color: #a6a6a6;
+      font-family: 'Circe';
+      font-weight: normal;
+    }
+  }
+  p {
+    width: 57%;
+    margin: 6.8% 0 5.4%;
+    font-family: 'Cabin';
+    letter-spacing: 0.03em;
+    font-size:  0.9em;
+    line-height: 1.8em;
+  }
+  .bottom {
+    &::after {
+      content: url("../images/arrow-up.png");
+      display: inline-block;
+      vertical-align: middle;
+      padding-right: 16px;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+
+.more-info {
+  background-color: #edecec;
+  padding-left: @margin-left + 0.2%;
+  padding-right: @margin-right;
+  div:first-child {
+    margin-top: 40%;
+    margin-bottom: 20%;
+    box-sizing: border-box;
+    width: @info-width;
+    margin-left: @info-margin-left;
+    display: inline-block;
+    border: @border;
+    padding: 1.1% 4.6% 2.6%;
+    color: #232323;
+  }
+  p {
+    margin-bottom: 0.3em;
+    font-size: 1.2em;
+  }
+  h3 {
+    font-family: 'Circe Bold';
+    font-size: 3em;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .more-info-button {
+    vertical-align: middle;
+    font-family: 'Circe Bold';
+    font-size: 0.7em;
+    display: inline-block;
+    background-color: white;
+    margin-left: 13%;
+    padding: 1.6% 3.6%;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    color: #202020;
+    background-image: url("../images/border-line.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 87% 10%;
+
+
+    &:hover {
+      color: @color-gold;
+    }
+    &:active {
+      color: black;
+    }
+    &:disabled {
+      border: 0;
+      opacity: 0.9;
+    }
+  }
+}
+
+footer {
+  background-image: url("../images/background-footer.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15.7%;
+  padding-left: @margin-left;
+  padding-right: @margin-right;
+  border-bottom: @border;
+  .footer-main {
+    background-image: url("../images/wolf.png");
+    background-repeat: no-repeat;
+    background-size: 36%;
+    padding-top: 10%;
+    background-position: bottom center;
+    h2 {
+      font-family: 'Circe Bold';
+      text-align: center;
+      font-size: 3.1em;
+      color: white;
+      line-height: 0.46em;
+    }
+    & :last-child {
+      margin-bottom: 0;
+    }
+  }
+  .footer-button {
+    font-weight: bold;
+    font-family: "Circe Bold";
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid @color-gold;
+    padding: 1% 4.5%;
+    margin-top: 5.8%;
+    margin-bottom: 7.1%;
+    font-size: 1em;
+    color: @color-gold;
+    &:hover {
+      background-color: saturate(@color-gold, 80%);
+    }
+  }
+  .footer-contacts {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    .footer-contacts-soclinks {
+      a {
+        padding: 0 5%;
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        background-repeat: no-repeat;
+      }
+      .pinterest {
+        background-image: url("../images/pinterest.png");
+        :hover {
+          background-image: url("../images/hover-pinterest.png");
+        }
+      }
+      .dribble {
+        background-image: url("../images/dribble.png");
+      }
+
+      .instagram {
+        background-image: url("../images/insta.png");
+      }
+      .behance {
+        background-image: url("../images/behance.png");
+      }
+      .facebook {
+        background-image: url("../images/facebook.png");
+      }
+    }
+    .footer-copyright {
+      background-image: url("../images/logo.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+    }
+  }
+}
